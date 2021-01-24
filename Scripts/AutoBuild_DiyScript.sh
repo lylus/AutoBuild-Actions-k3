@@ -19,9 +19,9 @@ Diy_Core() {
 Diy-Part1() {
 	Diy_Part1_Base
 	
-	Replace_File Customize/mac80211.sh package/kernel/mac80211/files/lib/wifi
-	Replace_File Customize/system package/base-files/files/etc/config
-	Replace_File Customize/banner package/base-files/files/etc
+	# Replace_File Customize/mac80211.sh package/kernel/mac80211/files/lib/wifi
+	# Replace_File Customize/system package/base-files/files/etc/config
+	# Replace_File Customize/banner package/base-files/files/etc
 
 	# ExtraPackages svn network/services dnsmasq https://github.com/openwrt/openwrt/trunk/package/network/services
 	# ExtraPackages svn network/services dropbear https://github.com/openwrt/openwrt/trunk/package/network/services
@@ -42,7 +42,7 @@ Diy-Part1() {
 
 Diy-Part2() {
 	Diy_Part2_Base
-	Replace_File Customize/mwan3.config package/feeds/packages/mwan3/files/etc/config mwan3
+	# Replace_File Customize/mwan3.config package/feeds/packages/mwan3/files/etc/config mwan3
 	# ExtraPackages svn feeds/packages mwan3 https://github.com/openwrt/packages/trunk/net
 }
 
