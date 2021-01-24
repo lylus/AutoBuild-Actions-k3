@@ -8,7 +8,7 @@ Diy_Core() {
 	Default_Device=openwrt
 
 	INCLUDE_AutoUpdate=true
-	INCLUDE_AutoBuild_Tools=true
+	INCLUDE_AutoBuild_Tools=false
 	INCLUDE_SSR_Plus=true
 	INCLUDE_Passwall=false
 	INCLUDE_Latest_Xray=true
