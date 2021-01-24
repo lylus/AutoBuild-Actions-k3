@@ -71,8 +71,8 @@ Diy_Part2_Base() {
 Diy_Part3_Base() {
 	Diy_Core
 	GET_TARGET_INFO
-	Default_Firmware="openwrt-${TARGET_BOARD}-${TARGET_SUBTARGET}-${TARGET_PROFILE}-squashfs-sysupgrade.bin"
-	AutoBuild_Firmware="AutoBuild-${TARGET_PROFILE}-${Openwrt_Version}.bin"
+	Default_Firmware="openwrt-${TARGET_BOARD}-${TARGET_SUBTARGET}-${TARGET_PROFILE}-squashfs-combined.img.gz"
+	AutoBuild_Firmware="AutoBuild-${TARGET_PROFILE}-${Openwrt_Version}.img.gz"
 	AutoBuild_Detail="AutoBuild-${TARGET_PROFILE}-${Openwrt_Version}.detail"
 	Mkdir bin/Firmware
 	echo "Firmware: ${AutoBuild_Firmware}"
