@@ -133,7 +133,7 @@ if [[ ! ${Force_Update} == 1 ]];then
 	fi
 fi
 Firmware_Info="${GET_FullVersion}"
-Firmware="${Firmware_Info}.bin"
+Firmware="${Firmware_Info}.img.gz"
 Firmware_Detail="${Firmware_Info}.detail"
 echo -e "\n云端固件名称: ${Firmware}"
 echo "固件下载地址: ${Github_Download}"
