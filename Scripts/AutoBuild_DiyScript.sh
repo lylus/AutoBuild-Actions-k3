@@ -4,8 +4,8 @@
 # AutoBuild DiyScript
 
 Diy_Core() {
-	Author=Hyy2001
-	Default_Device=d-team_newifi-d2
+	Author=Lylus
+	Default_Device=openwrt
 
 	INCLUDE_AutoUpdate=true
 	INCLUDE_AutoBuild_Tools=true
@@ -30,14 +30,14 @@ Diy-Part1() {
 	# ExtraPackages svn kernel mt76 https://github.com/openwrt/openwrt/trunk/package/kernel
 	
 	ExtraPackages git lean helloworld https://github.com/fw876 master
-	ExtraPackages git lean luci-theme-argon https://github.com/jerrykuku 18.06
-	ExtraPackages git other luci-app-argon-config https://github.com/jerrykuku master
-	ExtraPackages git other luci-app-adguardhome https://github.com/Hyy2001X master
-	ExtraPackages svn other luci-app-smartdns https://github.com/project-openwrt/openwrt/trunk/package/ntlf9t
-	ExtraPackages svn other smartdns https://github.com/project-openwrt/openwrt/trunk/package/ntlf9t
-	ExtraPackages git other OpenClash https://github.com/vernesong master
-	ExtraPackages git other luci-app-serverchan https://github.com/tty228 master
-	ExtraPackages svn other luci-app-socat https://github.com/project-openwrt/openwrt/trunk/package/lienol
+	# ExtraPackages git lean luci-theme-argon https://github.com/jerrykuku 18.06
+	# ExtraPackages git other luci-app-argon-config https://github.com/jerrykuku master
+	# ExtraPackages git other luci-app-adguardhome https://github.com/Hyy2001X master
+	# ExtraPackages svn other luci-app-smartdns https://github.com/project-openwrt/openwrt/trunk/package/ntlf9t
+	# ExtraPackages svn other smartdns https://github.com/project-openwrt/openwrt/trunk/package/ntlf9t
+	# ExtraPackages git other OpenClash https://github.com/vernesong master
+	# ExtraPackages git other luci-app-serverchan https://github.com/tty228 master
+	# ExtraPackages svn other luci-app-socat https://github.com/project-openwrt/openwrt/trunk/package/lienol
 }
 
 Diy-Part2() {
