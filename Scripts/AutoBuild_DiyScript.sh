@@ -5,10 +5,10 @@
 
 Diy_Core() {
 	Author=Lylus
-	Default_Device=openwrt
+	Default_Device=vmware-inc-vmware-virtual-platform
 
 	INCLUDE_AutoUpdate=true
-	INCLUDE_AutoBuild_Tools=false
+	INCLUDE_AutoBuild_Tools=true
 	INCLUDE_SSR_Plus=true
 	INCLUDE_Passwall=false
 	INCLUDE_Latest_Xray=true
