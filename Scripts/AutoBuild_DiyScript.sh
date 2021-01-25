@@ -5,7 +5,7 @@
 
 Diy_Core() {
 	Author=Lylus
-	Default_Device=vmware-inc-vmware-virtual-platform
+	Default_Device=generic
 
 	INCLUDE_AutoUpdate=true
 	INCLUDE_AutoBuild_Tools=true
