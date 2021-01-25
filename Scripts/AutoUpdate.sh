@@ -20,7 +20,7 @@ cd /etc
 clear && echo "Openwrt-AutoUpdate Script ${Version}"
 Input_Option="$1"
 if [[ -z "${Input_Option}" ]];then
-	Upgrade_Options="-q" && TIME && echo "执行: 保留配置更新固件[静默模式]"
+	Upgrade_Options="-q" && TIME && echo "执行: 保留配置更新固件[静默模式]..."
 else
 	case ${Input_Option} in
 	-n)
@@ -108,8 +108,8 @@ if [[ ${Stable_Mode} == 1 ]];then
 else
 	GET_Version_Type=""
 fi
-GET_FullVersion=$(cat /tmp/Github_Tags | egrep -o "AutoBuild-${CURRENT_Device}-R[0-9]+.[0-9]+.[0-9]+.[0-9]+${GET_Version_Type}" | awk 'END {print}')
-GET_Version="${GET_FullVersion#*${CURRENT_Device}-}"
+GET_FullVersion=$(cat /tmp/Github_Tags | egrep -o "AutoBuild-generic-R[0-9]+.[0-9]+.[0-9]+.[0-9]+${GET_Version_Type}" | awk 'END {print}')
+GET_Version="${GET_FullVersion#*generic-}"
 if [[ -z "${GET_FullVersion}" ]] || [[ -z "${GET_Version}" ]];then
 	TIME && echo "检查更新失败,请稍后重试!"
 	exit
