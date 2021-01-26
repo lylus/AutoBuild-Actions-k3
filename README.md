@@ -5,7 +5,7 @@
 
 **自动编译:本项目将在每天 19:00 自动编译固件,如需自助更新请点击 ***Star*****
 
-测试通过的设备: `d-team_newifi-d2`、`phicomm_k2p`
+测试通过的设备: x86平台及虚拟化平台
 
 测试通过的源码: [Lede](https://github.com/coolsnowwolf/lede)
 
