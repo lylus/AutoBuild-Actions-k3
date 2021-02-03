@@ -10,7 +10,7 @@ Diy_Core() {
 	INCLUDE_AutoUpdate=true
 	INCLUDE_AutoBuild_Tools=true
 	INCLUDE_SSR_Plus=true
-	INCLUDE_Passwall=false
+	INCLUDE_Passwall=true
 	INCLUDE_Latest_Xray=true
 	INCLUDE_mt7621_OC1000MHz=false
 	INCLUDE_Enable_FirewallPort_53=true
