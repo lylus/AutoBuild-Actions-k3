@@ -45,6 +45,10 @@ Diy_Part2_Base() {
 	if [[ "${INCLUDE_Enable_FirewallPort_53}" == "true" ]];then
 		[ -f "${Default_File}" ] && sed -i "s?iptables?#iptables?g" ${Default_File} > /dev/null 2>&1
 	fi
+	if [[ "${INCLUDE_Passwall}" == "true" ]];then
+                sed -i '/luci-app-passwall/d' .config > /dev/null 2>&1
+		echo -e "\nCONFIG_PACKAGE_luci-app-passwall=y" >> .config
+	fi
 	if [[ "${INCLUDE_AutoUpdate}" == "true" ]];then
 		ExtraPackages git lean luci-app-autoupdate https://github.com/lylus main
 		sed -i '/luci-app-autoupdate/d' .config > /dev/null 2>&1
