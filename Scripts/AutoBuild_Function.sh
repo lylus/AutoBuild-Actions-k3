@@ -46,7 +46,7 @@ Diy_Part2_Base() {
 		[ -f "${Default_File}" ] && sed -i "s?iptables?#iptables?g" ${Default_File} > /dev/null 2>&1
 	fi
 	if [[ "${INCLUDE_AutoUpdate}" == "true" ]];then
-		ExtraPackages git lean luci-app-autoupdate https://github.com/lylus main
+		ExtraPackages git lean luci-app-autoupdate-k3 https://github.com/lylus main
 		sed -i '/luci-app-autoupdate/d' .config > /dev/null 2>&1
 		echo -e "\nCONFIG_PACKAGE_luci-app-autoupdate=y" >> .config
 		Replace_File Scripts/AutoUpdate.sh package/base-files/files/bin
