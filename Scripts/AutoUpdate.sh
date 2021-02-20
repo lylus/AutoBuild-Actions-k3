@@ -108,8 +108,8 @@ if [[ ${Stable_Mode} == 1 ]];then
 else
 	GET_Version_Type=""
 fi
-GET_FullVersion=$(cat /tmp/Github_Tags | egrep -o "AutoBuild-generic-R[0-9]+.[0-9]+.[0-9]+.[0-9]+${GET_Version_Type}" | awk 'END {print}')
-GET_Version="${GET_FullVersion#*generic-}"
+GET_FullVersion=$(cat /tmp/Github_Tags | egrep -o "AutoBuild-phicomm-k3-R[0-9]+.[0-9]+.[0-9]+.[0-9]+${GET_Version_Type}" | awk 'END {print}')
+GET_Version="${GET_FullVersion#*phicomm-k3-}"
 if [[ -z "${GET_FullVersion}" ]] || [[ -z "${GET_Version}" ]];then
 	TIME && echo "检查更新失败,请稍后重试!"
 	exit
