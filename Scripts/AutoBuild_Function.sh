@@ -47,8 +47,8 @@ Diy_Part2_Base() {
 	fi
 	if [[ "${INCLUDE_AutoUpdate}" == "true" ]];then
 		ExtraPackages git lean luci-app-autoupdate-k3 https://github.com/lylus main
-		sed -i '/luci-app-autoupdate/d' .config > /dev/null 2>&1
-		echo -e "\nCONFIG_PACKAGE_luci-app-autoupdate=y" >> .config
+		sed -i '/luci-app-autoupdate-k3/d' .config > /dev/null 2>&1
+		echo -e "\nCONFIG_PACKAGE_luci-app-autoupdate-k3=y" >> .config
 		Replace_File Scripts/AutoUpdate.sh package/base-files/files/bin
 		AutoUpdate_Version=$(awk 'NR==6' package/base-files/files/bin/AutoUpdate.sh | awk -F '[="]+' '/Version/{print $2}')
 		[[ -z "${AutoUpdate_Version}" ]] && AutoUpdate_Version="Unknown"
