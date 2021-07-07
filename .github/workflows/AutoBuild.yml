@@ -123,7 +123,7 @@ jobs:
 
     - name: Run Diy-Part3 test
       run: |
-	      cd bin/targets/bcm53xx/generic/
+        cd bin/targets/bcm53xx/generic/
         ls
 
     - name: Run Diy-Part3 Scripts
