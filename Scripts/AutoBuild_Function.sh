@@ -76,6 +76,10 @@ Diy_Part3_Base() {
 	AutoBuild_Detail="AutoBuild-${TARGET_PROFILE}-${Openwrt_Version}.detail"
 	Mkdir bin/Firmware
 	echo "Firmware: ${AutoBuild_Firmware}"
+	cd /bin/targets/"${TARGET_BOARD}/${TARGET_SUBTARGET}/
+	ls
+	cd /bin/targets/bcm53xx/generic/
+	ls
 	mv -f bin/targets/"${TARGET_BOARD}/${TARGET_SUBTARGET}/${Default_Firmware}" bin/Firmware/"${AutoBuild_Firmware}"
 	_MD5=$(md5sum bin/Firmware/${AutoBuild_Firmware} | cut -d ' ' -f1)
 	_SHA256=$(sha256sum bin/Firmware/${AutoBuild_Firmware} | cut -d ' ' -f1)
