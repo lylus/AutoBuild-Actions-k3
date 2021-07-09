@@ -121,11 +121,6 @@ jobs:
         cd openwrt
         make -j$(nproc) || make -j1 || make -j1 V=s
 
-    - name: Run Diy-Part3 test
-      run: |
-        cd bin/targets/bcm53xx/generic/
-        ls
-
     - name: Run Diy-Part3 Scripts
       run: |
         echo "## $(date +"%Y%m%d")" > update_log.txt
