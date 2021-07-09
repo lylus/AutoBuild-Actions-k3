@@ -71,7 +71,7 @@ Diy_Part2_Base() {
 Diy_Part3_Base() {
 	Diy_Core
 	GET_TARGET_INFO
-	Default_Firmware="openwrt-bcm53xx-generic-phicomm-k3-squashfs.trx"
+	Default_Firmware="openwrt-bcm53xx-generic-phicomm_k3-squashfs.trx"
 	AutoBuild_Firmware="AutoBuild-${TARGET_PROFILE}-${Openwrt_Version}.trx"
 	AutoBuild_Detail="AutoBuild-${TARGET_PROFILE}-${Openwrt_Version}.detail"
 	Mkdir bin/Firmware
